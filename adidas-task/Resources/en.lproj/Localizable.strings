@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  adidas-task
+
+  Created by Jaime Domenech on 09/11/2020.
+  
+*/
+
+"listName" = "Goals";
+"stepsTitle" = "Steps";
+"walkingTitle" = "Walk";
+"runTitle" = "Run";
+"otherTitle" = "Other";
+"errorNoDataTitle" = "We could't fetch new goals";
+"healthKitAdvisoryTitle" = "Health data access";
+"errorNoDataDescription" = "Do you have internet connection? We need access to internet to download the daily goals. After downloading them one time, you will be able to use the app with no connection ;)";
+"healthKitAdvisoryDescription" = "We need access to health data. We will ask you only once. If you can not see any progress in your goals, check the health permissions in Settings.";
+"adidasAlertOKButtonTitle" = "OK";

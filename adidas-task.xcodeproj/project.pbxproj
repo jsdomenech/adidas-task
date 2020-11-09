@@ -1,0 +1,1096 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0204652E255745030061CD93 /* ActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204652D255745030061CD93 /* ActivityService.swift */; };
+		02046533255745B90061CD93 /* HKActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046532255745B90061CD93 /* HKActivityService.swift */; };
+		02046540255748380061CD93 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0204653F255748380061CD93 /* HealthKit.framework */; };
+		02046548255802980061CD93 /* ActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046547255802980061CD93 /* ActivityReport.swift */; };
+		02046559255810950061CD93 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046558255810950061CD93 /* GoalCell.swift */; };
+		0204656125581A180061CD93 /* UIColor+AdidasColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204656025581A180061CD93 /* UIColor+AdidasColors.swift */; };
+		0204656A255821A30061CD93 /* GoalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046569255821A30061CD93 /* GoalDetailViewController.swift */; };
+		02046572255821AD0061CD93 /* GoalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046571255821AD0061CD93 /* GoalDetailViewModel.swift */; };
+		02046577255821B70061CD93 /* GoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046576255821B70061CD93 /* GoalDetailView.swift */; };
+		0204657F2558417F0061CD93 /* GoalsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204657E2558417F0061CD93 /* GoalsListViewModelTests.swift */; };
+		0204658C255842BC0061CD93 /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204658B255842BC0061CD93 /* TestService.swift */; };
+		02046594255851A20061CD93 /* TestActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046593255851A20061CD93 /* TestActivityService.swift */; };
+		02046599255853FF0061CD93 /* GoalDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046598255853FF0061CD93 /* GoalDetailViewModelTests.swift */; };
+		020465A1255857610061CD93 /* GoalsListScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020465A0255857610061CD93 /* GoalsListScreenTests.swift */; };
+		020465AF255936460061CD93 /* GoalsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020465AE255936460061CD93 /* GoalsRepositoryTests.swift */; };
+		020465DC25593C090061CD93 /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020465DB25593C090061CD93 /* PersistanceService.swift */; };
+		020465E125593D1B0061CD93 /* JSONLocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020465E025593D1B0061CD93 /* JSONLocalStore.swift */; };
+		022069A025594BC900C47C00 /* AdidasAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0220699F25594BC900C47C00 /* AdidasAlert.swift */; };
+		022069B2255997EE00C47C00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 022069B4255997EE00C47C00 /* Localizable.strings */; };
+		022069BC2559A49000C47C00 /* GoalDetailsScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022069BB2559A49000C47C00 /* GoalDetailsScreenTests.swift */; };
+		02F739232556BBF800C3C7A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739222556BBF800C3C7A9 /* AppDelegate.swift */; };
+		02F7392C2556BBFA00C3C7A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F7392B2556BBFA00C3C7A9 /* Assets.xcassets */; };
+		02F7392F2556BBFA00C3C7A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F7392D2556BBFA00C3C7A9 /* LaunchScreen.storyboard */; };
+		02F739672556BFB400C3C7A9 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739662556BFB400C3C7A9 /* ApiClient.swift */; };
+		02F7396D2556C00600C3C7A9 /* DebugPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7396C2556C00600C3C7A9 /* DebugPrint.swift */; };
+		02F739752556C06400C3C7A9 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739742556C06400C3C7A9 /* ApiRequest.swift */; };
+		02F7399A2556C3C600C3C7A9 /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739992556C3C600C3C7A9 /* Callback.swift */; };
+		02F7399F2556C49200C3C7A9 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F7399E2556C49200C3C7A9 /* AuthManager.swift */; };
+		02F739A52556C4C200C3C7A9 /* URL+setQueryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739A42556C4C200C3C7A9 /* URL+setQueryItems.swift */; };
+		02F739AD2556C56400C3C7A9 /* URLRequest+addAuthHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739AC2556C56400C3C7A9 /* URLRequest+addAuthHeader.swift */; };
+		02F739B32556C78100C3C7A9 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739B22556C78100C3C7A9 /* CodeView.swift */; };
+		02F739BB2556C8DE00C3C7A9 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739BA2556C8DE00C3C7A9 /* CodeViewController.swift */; };
+		02F739C02556CCAE00C3C7A9 /* MVVMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739BF2556CCAE00C3C7A9 /* MVVMView.swift */; };
+		02F739C82556CDB700C3C7A9 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739C72556CDB700C3C7A9 /* MVVMViewController.swift */; };
+		02F739CD2556CE7700C3C7A9 /* AppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739CC2556CE7700C3C7A9 /* AppDependencyContainer.swift */; };
+		02F739D22556CFF200C3C7A9 /* GRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739D12556CFF200C3C7A9 /* GRService.swift */; };
+		02F739E02556D35A00C3C7A9 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739DF2556D35A00C3C7A9 /* Goal.swift */; };
+		02F739E52556D42700C3C7A9 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739E42556D42700C3C7A9 /* Reward.swift */; };
+		02F739F02556D88500C3C7A9 /* GetGoalsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F739EF2556D88500C3C7A9 /* GetGoalsResponse.swift */; };
+		02F73A102556DAF900C3C7A9 /* BigChallengeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F73A0F2556DAF900C3C7A9 /* BigChallengeService.swift */; };
+		02F73A182556DBBB00C3C7A9 /* BigChallengeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F73A172556DBBB00C3C7A9 /* BigChallengeRequests.swift */; };
+		02F73A1D2556DD1A00C3C7A9 /* Statics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F73A1C2556DD1A00C3C7A9 /* Statics.swift */; };
+		02F73A282556DE2300C3C7A9 /* GRStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F73A272556DE2300C3C7A9 /* GRStore.swift */; };
+		02F73A2E2556E12500C3C7A9 /* InMemoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F73A2D2556E12500C3C7A9 /* InMemoryStore.swift */; };
+		02F73A362556E22100C3C7A9 /* GRStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F73A352556E22100C3C7A9 /* GRStoreError.swift */; };
+		02F73A3B2556E46300C3C7A9 /* GoalsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F73A3A2556E46300C3C7A9 /* GoalsRepository.swift */; };
+		02F73A442556E6B200C3C7A9 /* GoalsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F73A432556E6B200C3C7A9 /* GoalsListViewController.swift */; };
+		02F73A4C2556E6C300C3C7A9 /* GoalsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F73A4B2556E6C300C3C7A9 /* GoalsListViewModel.swift */; };
+		02F73A512556E6CC00C3C7A9 /* GoalsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F73A502556E6CC00C3C7A9 /* GoalsListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02F739362556BBFA00C3C7A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02F739172556BBF800C3C7A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02F7391E2556BBF800C3C7A9;
+			remoteInfo = "adidas-task";
+		};
+		02F739412556BBFA00C3C7A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02F739172556BBF800C3C7A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02F7391E2556BBF800C3C7A9;
+			remoteInfo = "adidas-task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0204652D255745030061CD93 /* ActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityService.swift; sourceTree = "<group>"; };
+		02046532255745B90061CD93 /* HKActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKActivityService.swift; sourceTree = "<group>"; };
+		0204653D255748380061CD93 /* adidas-task.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "adidas-task.entitlements"; sourceTree = "<group>"; };
+		0204653F255748380061CD93 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		02046547255802980061CD93 /* ActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityReport.swift; sourceTree = "<group>"; };
+		02046558255810950061CD93 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		0204656025581A180061CD93 /* UIColor+AdidasColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AdidasColors.swift"; sourceTree = "<group>"; };
+		02046569255821A30061CD93 /* GoalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewController.swift; sourceTree = "<group>"; };
+		02046571255821AD0061CD93 /* GoalDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewModel.swift; sourceTree = "<group>"; };
+		02046576255821B70061CD93 /* GoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailView.swift; sourceTree = "<group>"; };
+		0204657E2558417F0061CD93 /* GoalsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListViewModelTests.swift; sourceTree = "<group>"; };
+		0204658B255842BC0061CD93 /* TestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestService.swift; sourceTree = "<group>"; };
+		02046593255851A20061CD93 /* TestActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestActivityService.swift; sourceTree = "<group>"; };
+		02046598255853FF0061CD93 /* GoalDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewModelTests.swift; sourceTree = "<group>"; };
+		020465A0255857610061CD93 /* GoalsListScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListScreenTests.swift; sourceTree = "<group>"; };
+		020465AE255936460061CD93 /* GoalsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRepositoryTests.swift; sourceTree = "<group>"; };
+		020465DB25593C090061CD93 /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
+		020465E025593D1B0061CD93 /* JSONLocalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLocalStore.swift; sourceTree = "<group>"; };
+		0220699F25594BC900C47C00 /* AdidasAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdidasAlert.swift; sourceTree = "<group>"; };
+		022069B3255997EE00C47C00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		022069BB2559A49000C47C00 /* GoalDetailsScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailsScreenTests.swift; sourceTree = "<group>"; };
+		02F7391F2556BBF800C3C7A9 /* adidas-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "adidas-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F739222556BBF800C3C7A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02F7392B2556BBFA00C3C7A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02F7392E2556BBFA00C3C7A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		02F739302556BBFA00C3C7A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F739352556BBFA00C3C7A9 /* adidas-taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "adidas-taskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F7393B2556BBFA00C3C7A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F739402556BBFA00C3C7A9 /* adidas-taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "adidas-taskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F739462556BBFA00C3C7A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F739662556BFB400C3C7A9 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		02F7396C2556C00600C3C7A9 /* DebugPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPrint.swift; sourceTree = "<group>"; };
+		02F739742556C06400C3C7A9 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		02F739992556C3C600C3C7A9 /* Callback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callback.swift; sourceTree = "<group>"; };
+		02F7399E2556C49200C3C7A9 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		02F739A42556C4C200C3C7A9 /* URL+setQueryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+setQueryItems.swift"; sourceTree = "<group>"; };
+		02F739AC2556C56400C3C7A9 /* URLRequest+addAuthHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+addAuthHeader.swift"; sourceTree = "<group>"; };
+		02F739B22556C78100C3C7A9 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		02F739BA2556C8DE00C3C7A9 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		02F739BF2556CCAE00C3C7A9 /* MVVMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMView.swift; sourceTree = "<group>"; };
+		02F739C72556CDB700C3C7A9 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		02F739CC2556CE7700C3C7A9 /* AppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyContainer.swift; sourceTree = "<group>"; };
+		02F739D12556CFF200C3C7A9 /* GRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRService.swift; sourceTree = "<group>"; };
+		02F739DF2556D35A00C3C7A9 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		02F739E42556D42700C3C7A9 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		02F739EF2556D88500C3C7A9 /* GetGoalsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoalsResponse.swift; sourceTree = "<group>"; };
+		02F73A0F2556DAF900C3C7A9 /* BigChallengeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigChallengeService.swift; sourceTree = "<group>"; };
+		02F73A172556DBBB00C3C7A9 /* BigChallengeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigChallengeRequests.swift; sourceTree = "<group>"; };
+		02F73A1C2556DD1A00C3C7A9 /* Statics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statics.swift; sourceTree = "<group>"; };
+		02F73A272556DE2300C3C7A9 /* GRStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRStore.swift; sourceTree = "<group>"; };
+		02F73A2D2556E12500C3C7A9 /* InMemoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryStore.swift; sourceTree = "<group>"; };
+		02F73A352556E22100C3C7A9 /* GRStoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRStoreError.swift; sourceTree = "<group>"; };
+		02F73A3A2556E46300C3C7A9 /* GoalsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRepository.swift; sourceTree = "<group>"; };
+		02F73A432556E6B200C3C7A9 /* GoalsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListViewController.swift; sourceTree = "<group>"; };
+		02F73A4B2556E6C300C3C7A9 /* GoalsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListViewModel.swift; sourceTree = "<group>"; };
+		02F73A502556E6CC00C3C7A9 /* GoalsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02F7391C2556BBF800C3C7A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02046540255748380061CD93 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F739322556BBFA00C3C7A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F7393D2556BBFA00C3C7A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0204652C255744DE0061CD93 /* ActivityService */ = {
+			isa = PBXGroup;
+			children = (
+				0204652D255745030061CD93 /* ActivityService.swift */,
+				02046532255745B90061CD93 /* HKActivityService.swift */,
+				02046593255851A20061CD93 /* TestActivityService.swift */,
+			);
+			path = ActivityService;
+			sourceTree = "<group>";
+		};
+		0204653E255748380061CD93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0204653F255748380061CD93 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0204655725580F8A0061CD93 /* GoalCell */ = {
+			isa = PBXGroup;
+			children = (
+				02046558255810950061CD93 /* GoalCell.swift */,
+			);
+			path = GoalCell;
+			sourceTree = "<group>";
+		};
+		020465682558218F0061CD93 /* GoalDetail */ = {
+			isa = PBXGroup;
+			children = (
+				02046569255821A30061CD93 /* GoalDetailViewController.swift */,
+				02046571255821AD0061CD93 /* GoalDetailViewModel.swift */,
+				02046576255821B70061CD93 /* GoalDetailView.swift */,
+			);
+			path = GoalDetail;
+			sourceTree = "<group>";
+		};
+		0204658A255842A00061CD93 /* TestService */ = {
+			isa = PBXGroup;
+			children = (
+				0204658B255842BC0061CD93 /* TestService.swift */,
+			);
+			path = TestService;
+			sourceTree = "<group>";
+		};
+		020465DA25593B2C0061CD93 /* PersistenceService */ = {
+			isa = PBXGroup;
+			children = (
+				020465DB25593C090061CD93 /* PersistanceService.swift */,
+			);
+			path = PersistenceService;
+			sourceTree = "<group>";
+		};
+		020465E525593D220061CD93 /* JSONLocalStore */ = {
+			isa = PBXGroup;
+			children = (
+				020465E025593D1B0061CD93 /* JSONLocalStore.swift */,
+			);
+			path = JSONLocalStore;
+			sourceTree = "<group>";
+		};
+		0220699E25594B8E00C47C00 /* AdidasAlert */ = {
+			isa = PBXGroup;
+			children = (
+				0220699F25594BC900C47C00 /* AdidasAlert.swift */,
+			);
+			path = AdidasAlert;
+			sourceTree = "<group>";
+		};
+		02F739162556BBF800C3C7A9 = {
+			isa = PBXGroup;
+			children = (
+				02F739212556BBF800C3C7A9 /* adidas-task */,
+				02F739382556BBFA00C3C7A9 /* adidas-taskTests */,
+				02F739432556BBFA00C3C7A9 /* adidas-taskUITests */,
+				02F739202556BBF800C3C7A9 /* Products */,
+				0204653E255748380061CD93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02F739202556BBF800C3C7A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02F7391F2556BBF800C3C7A9 /* adidas-task.app */,
+				02F739352556BBFA00C3C7A9 /* adidas-taskTests.xctest */,
+				02F739402556BBFA00C3C7A9 /* adidas-taskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02F739212556BBF800C3C7A9 /* adidas-task */ = {
+			isa = PBXGroup;
+			children = (
+				0204653D255748380061CD93 /* adidas-task.entitlements */,
+				02F739302556BBFA00C3C7A9 /* Info.plist */,
+				02F739222556BBF800C3C7A9 /* AppDelegate.swift */,
+				02F739CC2556CE7700C3C7A9 /* AppDependencyContainer.swift */,
+				02F7395E2556BE5000C3C7A9 /* Base */,
+				02F7395F2556BE6C00C3C7A9 /* Models */,
+				02F7395B2556BE2E00C3C7A9 /* Screens */,
+				02F7395C2556BE3800C3C7A9 /* Common */,
+				02F7395D2556BE4300C3C7A9 /* Services */,
+				02F739642556BEED00C3C7A9 /* Resources */,
+			);
+			path = "adidas-task";
+			sourceTree = "<group>";
+		};
+		02F739382556BBFA00C3C7A9 /* adidas-taskTests */ = {
+			isa = PBXGroup;
+			children = (
+				02F7393B2556BBFA00C3C7A9 /* Info.plist */,
+				0204657E2558417F0061CD93 /* GoalsListViewModelTests.swift */,
+				02046598255853FF0061CD93 /* GoalDetailViewModelTests.swift */,
+				020465AE255936460061CD93 /* GoalsRepositoryTests.swift */,
+			);
+			path = "adidas-taskTests";
+			sourceTree = "<group>";
+		};
+		02F739432556BBFA00C3C7A9 /* adidas-taskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02F739462556BBFA00C3C7A9 /* Info.plist */,
+				020465A0255857610061CD93 /* GoalsListScreenTests.swift */,
+				022069BB2559A49000C47C00 /* GoalDetailsScreenTests.swift */,
+			);
+			path = "adidas-taskUITests";
+			sourceTree = "<group>";
+		};
+		02F7395B2556BE2E00C3C7A9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				020465682558218F0061CD93 /* GoalDetail */,
+				02F73A422556E68C00C3C7A9 /* GoalsList */,
+				02F739632556BED100C3C7A9 /* Launch */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		02F7395C2556BE3800C3C7A9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0220699E25594B8E00C47C00 /* AdidasAlert */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		02F7395D2556BE4300C3C7A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				020465DA25593B2C0061CD93 /* PersistenceService */,
+				0204652C255744DE0061CD93 /* ActivityService */,
+				02F739F42556D8FA00C3C7A9 /* GoalsRepository */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		02F7395E2556BE5000C3C7A9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				02F739B12556C75900C3C7A9 /* MVVM */,
+				02F7396B2556BFF900C3C7A9 /* Utils */,
+				02F739652556BFA700C3C7A9 /* ApiClient */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		02F7395F2556BE6C00C3C7A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02F739EF2556D88500C3C7A9 /* GetGoalsResponse.swift */,
+				02F739DF2556D35A00C3C7A9 /* Goal.swift */,
+				02F739E42556D42700C3C7A9 /* Reward.swift */,
+				02046547255802980061CD93 /* ActivityReport.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02F739632556BED100C3C7A9 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				02F7392D2556BBFA00C3C7A9 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		02F739642556BEED00C3C7A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0204656025581A180061CD93 /* UIColor+AdidasColors.swift */,
+				02F73A1C2556DD1A00C3C7A9 /* Statics.swift */,
+				02F7392B2556BBFA00C3C7A9 /* Assets.xcassets */,
+				022069B4255997EE00C47C00 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		02F739652556BFA700C3C7A9 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				02F739A32556C4AC00C3C7A9 /* Extensions */,
+				02F739662556BFB400C3C7A9 /* ApiClient.swift */,
+				02F739742556C06400C3C7A9 /* ApiRequest.swift */,
+				02F7399E2556C49200C3C7A9 /* AuthManager.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		02F7396B2556BFF900C3C7A9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				02F7396C2556C00600C3C7A9 /* DebugPrint.swift */,
+				02F739992556C3C600C3C7A9 /* Callback.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		02F739A32556C4AC00C3C7A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02F739A42556C4C200C3C7A9 /* URL+setQueryItems.swift */,
+				02F739AC2556C56400C3C7A9 /* URLRequest+addAuthHeader.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		02F739B12556C75900C3C7A9 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				02F739B22556C78100C3C7A9 /* CodeView.swift */,
+				02F739BA2556C8DE00C3C7A9 /* CodeViewController.swift */,
+				02F739BF2556CCAE00C3C7A9 /* MVVMView.swift */,
+				02F739C72556CDB700C3C7A9 /* MVVMViewController.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		02F739F42556D8FA00C3C7A9 /* GoalsRepository */ = {
+			isa = PBXGroup;
+			children = (
+				02F739F62556D92300C3C7A9 /* GRService */,
+				02F739F52556D91300C3C7A9 /* GRStore */,
+				02F73A3A2556E46300C3C7A9 /* GoalsRepository.swift */,
+			);
+			path = GoalsRepository;
+			sourceTree = "<group>";
+		};
+		02F739F52556D91300C3C7A9 /* GRStore */ = {
+			isa = PBXGroup;
+			children = (
+				02F73A2C2556E04F00C3C7A9 /* InMemoryStore */,
+				020465E525593D220061CD93 /* JSONLocalStore */,
+				02F73A352556E22100C3C7A9 /* GRStoreError.swift */,
+				02F73A272556DE2300C3C7A9 /* GRStore.swift */,
+			);
+			path = GRStore;
+			sourceTree = "<group>";
+		};
+		02F739F62556D92300C3C7A9 /* GRService */ = {
+			isa = PBXGroup;
+			children = (
+				0204658A255842A00061CD93 /* TestService */,
+				02F739F82556D95E00C3C7A9 /* BigChallengeService */,
+				02F739D12556CFF200C3C7A9 /* GRService.swift */,
+			);
+			path = GRService;
+			sourceTree = "<group>";
+		};
+		02F739F82556D95E00C3C7A9 /* BigChallengeService */ = {
+			isa = PBXGroup;
+			children = (
+				02F73A0F2556DAF900C3C7A9 /* BigChallengeService.swift */,
+				02F73A172556DBBB00C3C7A9 /* BigChallengeRequests.swift */,
+			);
+			path = BigChallengeService;
+			sourceTree = "<group>";
+		};
+		02F73A2C2556E04F00C3C7A9 /* InMemoryStore */ = {
+			isa = PBXGroup;
+			children = (
+				02F73A2D2556E12500C3C7A9 /* InMemoryStore.swift */,
+			);
+			path = InMemoryStore;
+			sourceTree = "<group>";
+		};
+		02F73A422556E68C00C3C7A9 /* GoalsList */ = {
+			isa = PBXGroup;
+			children = (
+				0204655725580F8A0061CD93 /* GoalCell */,
+				02F73A432556E6B200C3C7A9 /* GoalsListViewController.swift */,
+				02F73A4B2556E6C300C3C7A9 /* GoalsListViewModel.swift */,
+				02F73A502556E6CC00C3C7A9 /* GoalsListView.swift */,
+			);
+			path = GoalsList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02F7391E2556BBF800C3C7A9 /* adidas-task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F739492556BBFA00C3C7A9 /* Build configuration list for PBXNativeTarget "adidas-task" */;
+			buildPhases = (
+				02F7391B2556BBF800C3C7A9 /* Sources */,
+				02F7391C2556BBF800C3C7A9 /* Frameworks */,
+				02F7391D2556BBF800C3C7A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "adidas-task";
+			productName = "adidas-task";
+			productReference = 02F7391F2556BBF800C3C7A9 /* adidas-task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02F739342556BBFA00C3C7A9 /* adidas-taskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F7394C2556BBFA00C3C7A9 /* Build configuration list for PBXNativeTarget "adidas-taskTests" */;
+			buildPhases = (
+				02F739312556BBFA00C3C7A9 /* Sources */,
+				02F739322556BBFA00C3C7A9 /* Frameworks */,
+				02F739332556BBFA00C3C7A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02F739372556BBFA00C3C7A9 /* PBXTargetDependency */,
+			);
+			name = "adidas-taskTests";
+			productName = "adidas-taskTests";
+			productReference = 02F739352556BBFA00C3C7A9 /* adidas-taskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02F7393F2556BBFA00C3C7A9 /* adidas-taskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F7394F2556BBFA00C3C7A9 /* Build configuration list for PBXNativeTarget "adidas-taskUITests" */;
+			buildPhases = (
+				02F7393C2556BBFA00C3C7A9 /* Sources */,
+				02F7393D2556BBFA00C3C7A9 /* Frameworks */,
+				02F7393E2556BBFA00C3C7A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02F739422556BBFA00C3C7A9 /* PBXTargetDependency */,
+			);
+			name = "adidas-taskUITests";
+			productName = "adidas-taskUITests";
+			productReference = 02F739402556BBFA00C3C7A9 /* adidas-taskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02F739172556BBF800C3C7A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					02F7391E2556BBF800C3C7A9 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					02F739342556BBFA00C3C7A9 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 02F7391E2556BBF800C3C7A9;
+					};
+					02F7393F2556BBFA00C3C7A9 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 02F7391E2556BBF800C3C7A9;
+					};
+				};
+			};
+			buildConfigurationList = 02F7391A2556BBF800C3C7A9 /* Build configuration list for PBXProject "adidas-task" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02F739162556BBF800C3C7A9;
+			productRefGroup = 02F739202556BBF800C3C7A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02F7391E2556BBF800C3C7A9 /* adidas-task */,
+				02F739342556BBFA00C3C7A9 /* adidas-taskTests */,
+				02F7393F2556BBFA00C3C7A9 /* adidas-taskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02F7391D2556BBF800C3C7A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F7392F2556BBFA00C3C7A9 /* LaunchScreen.storyboard in Resources */,
+				022069B2255997EE00C47C00 /* Localizable.strings in Resources */,
+				02F7392C2556BBFA00C3C7A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F739332556BBFA00C3C7A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F7393E2556BBFA00C3C7A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02F7391B2556BBF800C3C7A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F739B32556C78100C3C7A9 /* CodeView.swift in Sources */,
+				02F739D22556CFF200C3C7A9 /* GRService.swift in Sources */,
+				02046572255821AD0061CD93 /* GoalDetailViewModel.swift in Sources */,
+				02F739A52556C4C200C3C7A9 /* URL+setQueryItems.swift in Sources */,
+				02F7399A2556C3C600C3C7A9 /* Callback.swift in Sources */,
+				02F73A442556E6B200C3C7A9 /* GoalsListViewController.swift in Sources */,
+				02F739E02556D35A00C3C7A9 /* Goal.swift in Sources */,
+				02F73A182556DBBB00C3C7A9 /* BigChallengeRequests.swift in Sources */,
+				02F73A512556E6CC00C3C7A9 /* GoalsListView.swift in Sources */,
+				022069A025594BC900C47C00 /* AdidasAlert.swift in Sources */,
+				020465DC25593C090061CD93 /* PersistanceService.swift in Sources */,
+				0204658C255842BC0061CD93 /* TestService.swift in Sources */,
+				02046548255802980061CD93 /* ActivityReport.swift in Sources */,
+				02F739CD2556CE7700C3C7A9 /* AppDependencyContainer.swift in Sources */,
+				02F73A1D2556DD1A00C3C7A9 /* Statics.swift in Sources */,
+				02F73A282556DE2300C3C7A9 /* GRStore.swift in Sources */,
+				02F73A2E2556E12500C3C7A9 /* InMemoryStore.swift in Sources */,
+				020465E125593D1B0061CD93 /* JSONLocalStore.swift in Sources */,
+				02046533255745B90061CD93 /* HKActivityService.swift in Sources */,
+				02F739C02556CCAE00C3C7A9 /* MVVMView.swift in Sources */,
+				02046577255821B70061CD93 /* GoalDetailView.swift in Sources */,
+				02F73A362556E22100C3C7A9 /* GRStoreError.swift in Sources */,
+				0204652E255745030061CD93 /* ActivityService.swift in Sources */,
+				02F739BB2556C8DE00C3C7A9 /* CodeViewController.swift in Sources */,
+				02046559255810950061CD93 /* GoalCell.swift in Sources */,
+				0204656A255821A30061CD93 /* GoalDetailViewController.swift in Sources */,
+				02F7399F2556C49200C3C7A9 /* AuthManager.swift in Sources */,
+				02F73A3B2556E46300C3C7A9 /* GoalsRepository.swift in Sources */,
+				0204656125581A180061CD93 /* UIColor+AdidasColors.swift in Sources */,
+				02F739232556BBF800C3C7A9 /* AppDelegate.swift in Sources */,
+				02F739AD2556C56400C3C7A9 /* URLRequest+addAuthHeader.swift in Sources */,
+				02F739C82556CDB700C3C7A9 /* MVVMViewController.swift in Sources */,
+				02F739E52556D42700C3C7A9 /* Reward.swift in Sources */,
+				02F739672556BFB400C3C7A9 /* ApiClient.swift in Sources */,
+				02F739752556C06400C3C7A9 /* ApiRequest.swift in Sources */,
+				02046594255851A20061CD93 /* TestActivityService.swift in Sources */,
+				02F739F02556D88500C3C7A9 /* GetGoalsResponse.swift in Sources */,
+				02F73A4C2556E6C300C3C7A9 /* GoalsListViewModel.swift in Sources */,
+				02F7396D2556C00600C3C7A9 /* DebugPrint.swift in Sources */,
+				02F73A102556DAF900C3C7A9 /* BigChallengeService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F739312556BBFA00C3C7A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0204657F2558417F0061CD93 /* GoalsListViewModelTests.swift in Sources */,
+				020465AF255936460061CD93 /* GoalsRepositoryTests.swift in Sources */,
+				02046599255853FF0061CD93 /* GoalDetailViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02F7393C2556BBFA00C3C7A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020465A1255857610061CD93 /* GoalsListScreenTests.swift in Sources */,
+				022069BC2559A49000C47C00 /* GoalDetailsScreenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02F739372556BBFA00C3C7A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02F7391E2556BBF800C3C7A9 /* adidas-task */;
+			targetProxy = 02F739362556BBFA00C3C7A9 /* PBXContainerItemProxy */;
+		};
+		02F739422556BBFA00C3C7A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02F7391E2556BBF800C3C7A9 /* adidas-task */;
+			targetProxy = 02F739412556BBFA00C3C7A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		022069B4255997EE00C47C00 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				022069B3255997EE00C47C00 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		02F7392D2556BBFA00C3C7A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02F7392E2556BBFA00C3C7A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02046583255842510061CD93 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "TEST DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Test;
+		};
+		02046584255842510061CD93 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "adidas-task/adidas-task.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 572SJY8C26;
+				INFOPLIST_FILE = "adidas-task/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdomenech.adidas-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Test;
+		};
+		02046585255842510061CD93 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FC5W4K42;
+				INFOPLIST_FILE = "adidas-taskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdomenech.adidas-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/adidas-task.app/adidas-task";
+			};
+			name = Test;
+		};
+		02046586255842510061CD93 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FC5W4K42;
+				INFOPLIST_FILE = "adidas-taskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdomenech.adidas-taskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "adidas-task";
+			};
+			name = Test;
+		};
+		02F739472556BBFA00C3C7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02F739482556BBFA00C3C7A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02F7394A2556BBFA00C3C7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "adidas-task/adidas-task.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 572SJY8C26;
+				INFOPLIST_FILE = "adidas-task/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdomenech.adidas-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		02F7394B2556BBFA00C3C7A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "adidas-task/adidas-task.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 572SJY8C26;
+				INFOPLIST_FILE = "adidas-task/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdomenech.adidas-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		02F7394D2556BBFA00C3C7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FC5W4K42;
+				INFOPLIST_FILE = "adidas-taskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdomenech.adidas-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/adidas-task.app/adidas-task";
+			};
+			name = Debug;
+		};
+		02F7394E2556BBFA00C3C7A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FC5W4K42;
+				INFOPLIST_FILE = "adidas-taskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdomenech.adidas-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/adidas-task.app/adidas-task";
+			};
+			name = Release;
+		};
+		02F739502556BBFA00C3C7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FC5W4K42;
+				INFOPLIST_FILE = "adidas-taskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdomenech.adidas-taskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "adidas-task";
+			};
+			name = Debug;
+		};
+		02F739512556BBFA00C3C7A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X7FC5W4K42;
+				INFOPLIST_FILE = "adidas-taskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsdomenech.adidas-taskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "adidas-task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02F7391A2556BBF800C3C7A9 /* Build configuration list for PBXProject "adidas-task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F739472556BBFA00C3C7A9 /* Debug */,
+				02046583255842510061CD93 /* Test */,
+				02F739482556BBFA00C3C7A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02F739492556BBFA00C3C7A9 /* Build configuration list for PBXNativeTarget "adidas-task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F7394A2556BBFA00C3C7A9 /* Debug */,
+				02046584255842510061CD93 /* Test */,
+				02F7394B2556BBFA00C3C7A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02F7394C2556BBFA00C3C7A9 /* Build configuration list for PBXNativeTarget "adidas-taskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F7394D2556BBFA00C3C7A9 /* Debug */,
+				02046585255842510061CD93 /* Test */,
+				02F7394E2556BBFA00C3C7A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02F7394F2556BBFA00C3C7A9 /* Build configuration list for PBXNativeTarget "adidas-taskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F739502556BBFA00C3C7A9 /* Debug */,
+				02046586255842510061CD93 /* Test */,
+				02F739512556BBFA00C3C7A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02F739172556BBF800C3C7A9 /* Project object */;
+}
