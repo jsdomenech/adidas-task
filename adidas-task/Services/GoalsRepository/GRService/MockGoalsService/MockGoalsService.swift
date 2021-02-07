@@ -1,5 +1,5 @@
 //
-//  TestService.swift
+//  MockGoalsService.swift
 //  adidas-task
 //
 //  Created by Jaime Domenech on 08/11/2020.
@@ -8,7 +8,7 @@
 import Foundation
 
 
-class TestService: GRService {
+class MockGoalsService: GRService {
     
     var isFailing: Bool = false
     var hasBeenCalled = false
@@ -25,7 +25,7 @@ class TestService: GRService {
     }
 }
 
-private extension TestService {
+private extension MockGoalsService {
     
     func generateMockGoals() -> [Goal] {
         let mock1 = Goal(id: "1", title: "TestGoal1", description: "TestDescription1", type: Goal.GoalType.step.rawValue, goal: 100, reward: Reward(trophy: "silver_medal", points: 10))

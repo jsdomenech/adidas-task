@@ -35,8 +35,8 @@ private extension GoalListView {
     func createTableView() -> UITableView {
         let tv = UITableView(frame: .zero)
         tv.translatesAutoresizingMaskIntoConstraints = false
-        tv.delegate = viewModel
-        tv.dataSource = viewModel
+        tv.delegate = self
+        tv.dataSource = self
         tv.separatorStyle = .none
         tv.showsVerticalScrollIndicator = false
         tv.backgroundColor = .clear
@@ -56,6 +56,31 @@ private extension GoalListView {
                            tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor)]
         
         NSLayoutConstraint.activate(constraints)
+    }
+}
+
+// MARK: TableViewDelegate & TableViewDataSource
+
+extension GoalListView: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.goals.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: GoalCell.kCellIdentifier, for: indexPath)
+        if let cell = cell as? GoalCell, viewModel.goals.count > indexPath.row {
+            cell.configure(with: viewModel.goals[indexPath.row])
+        }
+        return cell
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return GoalCell.kProposedMinimalHeight
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard viewModel.goals.count > indexPath.row else { return }
+        viewModel.userDidSelected(viewModel.goals[indexPath.row])
     }
 }
 

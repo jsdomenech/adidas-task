@@ -1,5 +1,5 @@
 //
-//  TestActivityService.swift
+//  MockActivityService.swift
 //  adidas-task
 //
 //  Created by Jaime Domenech on 08/11/2020.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TestActivityService: ActivityService {
+class MockActivityService: ActivityService {
     
     var onRequestForAuthorization: (()->Void)?
     
@@ -33,7 +33,4 @@ class TestActivityService: ActivityService {
     func getRunningDistance(completion: @escaping (Int) -> Void) {
         completion(mockRunning)
     }
-    
-    
-    
 }

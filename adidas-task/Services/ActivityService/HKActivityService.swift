@@ -13,13 +13,12 @@ class HKActivityService: ActivityService {
     
     // MARK: Properties
     
-    private let date: Date
+    private let date: Date = Calendar.current.startOfDay(for: Date())
     private let healthStore: HKHealthStore
     
     // MARK: LifeCycle
     
-    init(forDate date: Date) {
-        self.date = Calendar.current.startOfDay(for: date)
+    init() {
         self.healthStore = HKHealthStore()
     }
     

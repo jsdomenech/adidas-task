@@ -17,8 +17,8 @@
 		02046572255821AD0061CD93 /* GoalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046571255821AD0061CD93 /* GoalDetailViewModel.swift */; };
 		02046577255821B70061CD93 /* GoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046576255821B70061CD93 /* GoalDetailView.swift */; };
 		0204657F2558417F0061CD93 /* GoalsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204657E2558417F0061CD93 /* GoalsListViewModelTests.swift */; };
-		0204658C255842BC0061CD93 /* TestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204658B255842BC0061CD93 /* TestService.swift */; };
-		02046594255851A20061CD93 /* TestActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046593255851A20061CD93 /* TestActivityService.swift */; };
+		0204658C255842BC0061CD93 /* MockGoalsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204658B255842BC0061CD93 /* MockGoalsService.swift */; };
+		02046594255851A20061CD93 /* MockActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046593255851A20061CD93 /* MockActivityService.swift */; };
 		02046599255853FF0061CD93 /* GoalDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02046598255853FF0061CD93 /* GoalDetailViewModelTests.swift */; };
 		020465A1255857610061CD93 /* GoalsListScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020465A0255857610061CD93 /* GoalsListScreenTests.swift */; };
 		020465AF255936460061CD93 /* GoalsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020465AE255936460061CD93 /* GoalsRepositoryTests.swift */; };
@@ -87,8 +87,8 @@
 		02046571255821AD0061CD93 /* GoalDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewModel.swift; sourceTree = "<group>"; };
 		02046576255821B70061CD93 /* GoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailView.swift; sourceTree = "<group>"; };
 		0204657E2558417F0061CD93 /* GoalsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListViewModelTests.swift; sourceTree = "<group>"; };
-		0204658B255842BC0061CD93 /* TestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestService.swift; sourceTree = "<group>"; };
-		02046593255851A20061CD93 /* TestActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestActivityService.swift; sourceTree = "<group>"; };
+		0204658B255842BC0061CD93 /* MockGoalsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGoalsService.swift; sourceTree = "<group>"; };
+		02046593255851A20061CD93 /* MockActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockActivityService.swift; sourceTree = "<group>"; };
 		02046598255853FF0061CD93 /* GoalDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewModelTests.swift; sourceTree = "<group>"; };
 		020465A0255857610061CD93 /* GoalsListScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListScreenTests.swift; sourceTree = "<group>"; };
 		020465AE255936460061CD93 /* GoalsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsRepositoryTests.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 			children = (
 				0204652D255745030061CD93 /* ActivityService.swift */,
 				02046532255745B90061CD93 /* HKActivityService.swift */,
-				02046593255851A20061CD93 /* TestActivityService.swift */,
+				02046593255851A20061CD93 /* MockActivityService.swift */,
 			);
 			path = ActivityService;
 			sourceTree = "<group>";
@@ -196,12 +196,12 @@
 			path = GoalDetail;
 			sourceTree = "<group>";
 		};
-		0204658A255842A00061CD93 /* TestService */ = {
+		0204658A255842A00061CD93 /* MockGoalsService */ = {
 			isa = PBXGroup;
 			children = (
-				0204658B255842BC0061CD93 /* TestService.swift */,
+				0204658B255842BC0061CD93 /* MockGoalsService.swift */,
 			);
-			path = TestService;
+			path = MockGoalsService;
 			sourceTree = "<group>";
 		};
 		020465DA25593B2C0061CD93 /* PersistenceService */ = {
@@ -419,7 +419,7 @@
 		02F739F62556D92300C3C7A9 /* GRService */ = {
 			isa = PBXGroup;
 			children = (
-				0204658A255842A00061CD93 /* TestService */,
+				0204658A255842A00061CD93 /* MockGoalsService */,
 				02F739F82556D95E00C3C7A9 /* BigChallengeService */,
 				02F739D12556CFF200C3C7A9 /* GRService.swift */,
 			);
@@ -595,7 +595,7 @@
 				02F73A512556E6CC00C3C7A9 /* GoalsListView.swift in Sources */,
 				022069A025594BC900C47C00 /* AdidasAlert.swift in Sources */,
 				020465DC25593C090061CD93 /* PersistanceService.swift in Sources */,
-				0204658C255842BC0061CD93 /* TestService.swift in Sources */,
+				0204658C255842BC0061CD93 /* MockGoalsService.swift in Sources */,
 				02046548255802980061CD93 /* ActivityReport.swift in Sources */,
 				02F739CD2556CE7700C3C7A9 /* AppDependencyContainer.swift in Sources */,
 				02F73A1D2556DD1A00C3C7A9 /* Statics.swift in Sources */,
@@ -619,7 +619,7 @@
 				02F739E52556D42700C3C7A9 /* Reward.swift in Sources */,
 				02F739672556BFB400C3C7A9 /* ApiClient.swift in Sources */,
 				02F739752556C06400C3C7A9 /* ApiRequest.swift in Sources */,
-				02046594255851A20061CD93 /* TestActivityService.swift in Sources */,
+				02046594255851A20061CD93 /* MockActivityService.swift in Sources */,
 				02F739F02556D88500C3C7A9 /* GetGoalsResponse.swift in Sources */,
 				02F73A4C2556E6C300C3C7A9 /* GoalsListViewModel.swift in Sources */,
 				02F7396D2556C00600C3C7A9 /* DebugPrint.swift in Sources */,

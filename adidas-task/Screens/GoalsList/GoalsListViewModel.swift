@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GoalsListViewModel: NSObject {
+class GoalsListViewModel {
     
     // MARK: Binders
     
@@ -23,8 +23,8 @@ class GoalsListViewModel: NSObject {
     
     // MARK: Properties
     
-    private var goals = [Goal]()
-    private var activityReport: ActivityReport?
+    var goals = [Goal]()
+    var activityReport: ActivityReport?
     
     // MARK: LifeCycle
     
@@ -35,6 +35,17 @@ class GoalsListViewModel: NSObject {
         self.goalsRepository = goalsRepository
         self.activityService = activityService
         self.goalDetailFactory = goalDetailFactory
+    }
+}
+
+// MARK: Inputs
+
+extension GoalsListViewModel {
+
+    func userDidSelected(_ goal: Goal) {
+        guard let activityReport = activityReport else { return }
+        navigationHandler?(goalDetailFactory.makeGoalDetailViewController(withGoal: goal,
+                                                                          andActivityReport: activityReport))
     }
 }
 
@@ -84,32 +95,5 @@ extension GoalsListViewModel {
             debugSuccess(activityReport)
             self.activityReport = activityReport
         }
-    }
-}
-
-// MARK: TableView DataSource + Delegate
-
-extension GoalsListViewModel: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return goals.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: GoalCell.kCellIdentifier, for: indexPath)
-        if let cell = cell as? GoalCell, goals.count > indexPath.row {
-            cell.configure(with: goals[indexPath.row])
-        }
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return GoalCell.kProposedMinimalHeight
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let activityReport = activityReport else { return }
-        navigationHandler?(goalDetailFactory.makeGoalDetailViewController(withGoal: goals[indexPath.row],
-                                                                          andActivityReport: activityReport))
     }
 }

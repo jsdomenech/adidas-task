@@ -40,16 +40,16 @@ class AppDependencyContainer {
         GoalsListViewController(viewModel: makeGoalsListViewModel())
     }
     
-    func makeGoalsListViewModel(withTestGoalService testGoalService: GRService = TestService(),
-                                withTestActivityService testActivityService: ActivityService = TestActivityService()) -> GoalsListViewModel {
+    func makeGoalsListViewModel(goalService: GRService = MockGoalsService(),
+                                activityService: ActivityService = MockActivityService()) -> GoalsListViewModel {
         #if TEST
-        return GoalsListViewModel(withGoalsRepository: GoalsRepository(withService: testGoalService,
+        return GoalsListViewModel(withGoalsRepository: GoalsRepository(withService: goalService,
                                                                        andStore: InMemoryStore()),
-                                  activityService: testActivityService,
+                                  activityService: activityService,
                                   andGoalDetailFactory: self)
         #else
         return GoalsListViewModel(withGoalsRepository: goalsRepository,
-                           activityService: HKActivityService(forDate: Date()),
+                           activityService: HKActivityService(),
                            andGoalDetailFactory: self)
         #endif
     }

@@ -12,7 +12,7 @@ import XCTest
 class GoalsRepositoryTests: XCTestCase {
     
     var sut: GoalsRepository?
-    var goalsService: TestService = TestService()
+    var goalsService: MockGoalsService = MockGoalsService()
     var goalsStore: InMemoryStore = InMemoryStore()
     
     override func setUpWithError() throws {
@@ -21,7 +21,7 @@ class GoalsRepositoryTests: XCTestCase {
     
     override func tearDownWithError() throws {
         sut = nil
-        goalsService = TestService()
+        goalsService = MockGoalsService()
         goalsStore = InMemoryStore()
     }
     

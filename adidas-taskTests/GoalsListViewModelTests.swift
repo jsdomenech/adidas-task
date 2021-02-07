@@ -22,11 +22,11 @@ class GoalsListViewModelTests: XCTestCase {
 
     func test_whenServiceFetchData_viewModelShouldHaveGoals() throws {
         
-        let testService = TestService()
+        let testService = MockGoalsService()
         testService.isFailing = false
         testService.returningData = [mockGoal]
         
-        sut = appDependencyContainer.makeGoalsListViewModel(withTestGoalService: testService)
+        sut = appDependencyContainer.makeGoalsListViewModel(goalService: testService)
         
         let expectationCallback = expectation(description: "Should run the callback closure")
         sut?.reloadTableViewHandler = { goals in
@@ -39,10 +39,10 @@ class GoalsListViewModelTests: XCTestCase {
     
     func test_whenServiceFails_tableviewCallback_shouldNotBeCalled() throws {
         
-        let testService = TestService()
+        let testService = MockGoalsService()
         testService.isFailing = true
         
-        sut = appDependencyContainer.makeGoalsListViewModel(withTestGoalService: testService)
+        sut = appDependencyContainer.makeGoalsListViewModel(goalService: testService)
         
         let expectationCallback = expectation(description: "Should not run the callback closure")
         expectationCallback.isInverted = true
@@ -56,9 +56,9 @@ class GoalsListViewModelTests: XCTestCase {
     
     func test_whenAskForHelathAuth_tryToRequestAccess_toHealthKit() {
         
-        let testService = TestActivityService()
+        let testService = MockActivityService()
         
-        sut = appDependencyContainer.makeGoalsListViewModel(withTestActivityService: testService)
+        sut = appDependencyContainer.makeGoalsListViewModel(activityService: testService)
         
         let expectationCallback = expectation(description: "Should run the callback closure")
         testService.onRequestForAuthorization = {

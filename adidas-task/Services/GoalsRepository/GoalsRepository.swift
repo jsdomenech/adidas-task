@@ -17,7 +17,7 @@ class GoalsRepository {
     private let service: GRService
     private let store: GRStore
     
-    init(withService service: GRService, andStore store: GRStore){
+    init(withService service: GRService, andStore store: GRStore = InMemoryStore()){
         self.service = service
         self.store = store
     }
